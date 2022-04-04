@@ -22,7 +22,7 @@ export default function Home() {
   }
   
   const response = await fetch(`http://localhost:3333/products?q=${search}`)
-  const data = await response.json();
+  const data = await response.json();  
 
   const formatter = new Intl.NumberFormat('pt-BR', {
     style: 'currency',
